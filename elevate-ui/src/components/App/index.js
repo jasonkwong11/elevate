@@ -9,6 +9,7 @@ import alerts from '../../constants/alerts.json'
 import Search from '../Search';
 import Header from '../Header'
 import Table from '../Table';
+import AlertCounter from '../AlertCounter';
 
 class App extends Component {
 
@@ -19,6 +20,7 @@ class App extends Component {
       alerts: alerts,
       searchKey: '',
       searchTerm: '',
+      alertCount: alerts.length
     }
 
     this.onSearchChange = this.onSearchChange.bind(this);
@@ -43,12 +45,16 @@ class App extends Component {
     const {
       searchTerm,
       alerts,
-      searchKey
+      searchKey,
+      alertCount
     } = this.state;
 
     return (
       <div className="App">
         <Header />
+        <AlertCounter
+          value={alertCount}
+        />
         <Search
           value={searchTerm}
           onChange={this.onSearchChange}

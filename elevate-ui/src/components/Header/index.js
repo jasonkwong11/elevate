@@ -5,7 +5,7 @@ const styles = {
   fontFamily: 'verdana'
 }
 const Header = () =>
-  <h1 style={styles}>
+  <h1 style={styles} className="header">
     Fidelis Elevate
   </h1>
 

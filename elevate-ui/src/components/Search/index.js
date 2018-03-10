@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Search = ({ value, onChange, onSubmit, children }) =>
-  <form onSubmit={onSubmit}>
+  <form onSubmit={onSubmit} className="search-component">
     <input
       type="text"
       value={value}
