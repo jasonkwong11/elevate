@@ -1,7 +1,6 @@
 import { sortBy } from 'lodash';
 
-export const DEFAULT_PAGE = 0;
-export const DEFAULT_HPP = '20';
+export const DEFAULT_QUERY = '';
 
 const SORTS = {
   NONE: alert => alert,
