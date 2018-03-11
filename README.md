@@ -14,6 +14,7 @@ Run Jest tests with $ npm test
   ... composed of a Sort component, which allows the User to sort each Alert field alphabetically/numerically by clicking on the table header
 
  DONE - Clicking on a row will select an alert and display a detail view
+  ... toggles the details by clicking a row
   ... given more time, I'd put the detail view in a Popover or a right sidebar. Right now it's simply centered above the table which isn't ideal.
 
 ### Advanced features
